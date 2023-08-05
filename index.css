@@ -1,0 +1,733 @@
+*{
+	font-family: 'Playfair Display', sans-serif;;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	
+	font-size: 16px;
+
+	
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* ====================== NAV-BAR SECTION OF THE PAGE STARTS HERE====================== */
+
+#Nav_bar .nav_container{
+	width: 100%;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #454545;
+	height: 80px;
+    position: fixed;	
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+.left-nav img {
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.right-nav .ul-right-nav {
+
+	display: flex;
+	flex-direction: row;
+   gap: 30px;	
+	font-size: 1.8vw;
+	line-height: 70px;
+
+
+}
+
+.ul-right-nav{
+	list-style: none;
+
+}
+
+.ul-right-nav a{
+	text-decoration: none;
+		color: white;
+		transition: transform 0.8s linear 0s ;
+}
+
+.ul-right-nav a:hover {
+	color: #795c34;
+	opacity: 100%;
+	font-size: 28px;
+	transform:  translateY(10px);
+
+}
+
+.toggle{
+	width: 100%;
+  color: white;
+	text-align: right;
+	font-size: 18px;
+	padding-right: 20px;
+	display: none;
+
+}
+
+
+/* ================================== SLIDE SHOW SECTION ================================  */
+#container{
+
+	width: 100%;
+
+}
+
+.container-img-slide{
+	border: 2px solid white;
+width: 70%;
+margin: auto;
+height: 550px;
+position: relative;
+top:80px;
+overflow: hidden;
+animation: slide ease 0.8s;
+background: white;
+	
+}
+
+.img_slide{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.img_slide img{
+	width: 100%;
+   height:auto; 
+}
+
+.text{
+	position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+}
+
+
+@keyframes slide{
+	0%(right:-100px)
+	100%(left:0px)
+}
+
+/*=======================================PRODUCT CATEGORIES===============================*/
+
+#Product_categories{
+	margin-top: 80px;
+	background-color:#454545 ;
+	width: 100%;
+	
+	
+}
+
+
+
+#Product_categories h2{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 30px;
+	margin-bottom: 20px;
+}
+
+.inner_product_categories{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 25px;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+.inner_product_categories img {
+	width: 300px;
+	height: 300px;
+}
+
+.inner_product_categories h3{
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+
+/*====================================ABOUT US SECTION=========================================*/
+
+#about_us {
+	width: 100%;
+	background-color: #454545;
+}
+#about_us h2{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 40px;
+	margin-bottom: 10px;
+}
+
+#right_about_us_section{
+	display: flex;
+	flex-direction: column;
+
+}
+#top_right_about_us-section h3{
+	margin-left: 5px;
+	color: #795c34;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+#top_right_about_us-section p{
+	margin-left: 5px;
+	max-width: 1450px;
+	color: white;
+	font-size: 1.0em;
+	margin-bottom: 20px;
+	font-family: serif;
+
+}
+#top_right_about_us-section p:first-child::first-letter{
+	font-size: 45px;
+	color: #795c34;
+	font-weight: bold;
+}
+
+.bottom_right_about_us-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80%;
+	gap: 50px;
+	margin: 0 auto;
+}
+
+.bottom_img img{
+	width: 400px;
+	height: 400px;
+}
+.bottom_img h3{
+	color: white;
+	text-align: center;
+}
+
+/*==========================================CUSTOMER'S REVIEWS SECTION===================================*/
+
+#Reviews{
+	width: 100%;
+}
+
+#Reviews h2{
+ color:#795c34;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 40px;
+	margin-bottom: 10px;
+
+}
+#inner_reviews-div{
+	width: 80%;
+	margin: auto;
+	background-color: #454545;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.Reviews_content{
+	display: flex;
+	flex-direction: column;
+  color: white;
+	gap: 20px;
+	border: 1px solid white;
+	padding: 30px;
+
+	font-family: serif;
+}
+
+.Reviews_content i {
+	font-size: 46px;
+	padding-left:100px;
+color:#795c34;
+
+}
+
+.Reviews_content img{
+margin-left: 5px;
+
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.Reviews_content h3{
+	text-align: center;
+	font-size: 16px;
+}
+
+/*===========================PLACE YOUR ORDER=========================== */
+
+#Place_order_here{
+		background-image: url("IMG.jpg");
+	width: 100%;
+	background-color:#454545 ;
+	margin-top: 10px;
+}
+
+#Place_order_here h2{
+	color:white;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	
+
+
+}
+
+#Place_order_form{
+padding-top: 10px;
+	width: 30%;
+	background-color: grey;
+	margin: 20px auto;
+
+
+}
+
+input[type = text], input[type = email], input[type = number], input[type = date], input[type = time]{
+	font-weight: bold;
+	width: 100%;
+	margin: 10px auto;
+	height: 40px;
+	background-color: grey;
+	color: white;
+}
+label{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+textarea{
+	width: 100%;
+	height: 250px;
+	margin-top: 10px;
+}
+button{
+	margin-top: 5px;
+	color: white;
+	border: 1px solid white;
+	border-radius: 40px;
+	padding: 5px;
+	margin-right: 160px;
+	font-size: 1.5vw;
+	background-color: black;
+cursor: pointer;
+}
+
+/*===============================CONTACT ADDRESS STARTS HERE====================*/
+#contact_address{
+	margin-top: -7px;
+	width: 100%;
+	background-color: #454545;	
+}
+
+#inner_contact_address{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.content_inner_contact_address{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 10px;
+}
+
+.content_inner_contact_address h2{
+ color:#795c34;
+	font-size: 26px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.content_inner_contact_address P{
+	color: white;
+	font-size: 1.0em;
+	font-family: serif;
+}
+
+
+#social-media-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 15px;
+	color: #795c34;
+	font-size: 30px;
+}
+
+#social-media-icons a:hover{
+color: black;
+font-size: 40px;
+
+}
+
+.container_for_icons{
+	display: flex;
+	gap: 10px;
+}
+
+.icons{
+	font-size: 36PX;
+}
+
+
+.container_for_icons a {
+	color: white;
+}
+
+#horizontal_line{
+	width: 80%;
+	margin: auto;
+	color: #795c34;
+}
+
+/*===============================FOOTER STARTS HERE====================*/
+
+#footer{
+	width: 100%;
+	background-color: #454545;
+
+}
+
+#footer p{
+	width: 30%;
+	margin: auto;
+ font-size: 16px;
+ color: white;
+ 	font-family: serif;
+ 	padding-top: 10px;
+ 	font-weight: bold;
+}
+
+#footer p span{
+	color:  #795c34;
+}
+
+
+
+
+/*==================================MEDIA QUERY STARTS HERE==============================*/
+
+
+/*  1024 min-width media query*/
+@media screen and (min-width:1024px){
+	.inner_product_categories{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: space-between;
+	width: 70%;
+	margin: 0 auto;
+	
+}
+
+.inner_product_categories img {
+	width: 300px;
+	height: 300px;
+}
+
+#inner_reviews-div{
+	width: 90%;
+	margin: auto;
+	background-color: #454545;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+#footer p{
+width: 50%;
+margin: auto;
+
+}
+}
+
+
+/*min-width: 768px and max-width:1023px*/
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+.container-img-slide{
+width: 70%;
+margin: auto;
+height: 550px;	
+}
+
+.img_slide{
+	
+	width: 100%;
+	height: 100%;
+}
+
+.img_slide img{
+	width: 100%;
+   height:100%;    
+}
+
+	#inner_reviews-div{
+	width: 30%;
+	margin: auto;
+	background-color: #454545;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+.Reviews_content img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.Reviews_content i {
+
+	padding-left:70px;
+
+
+}
+
+#Place_order_form{
+	width: 40%;
+}
+
+#Place_order_here h2{
+	font-size: 25px;
+	
+}
+
+#footer p{
+width: 50%;
+margin: auto;
+
+}
+
+}
+
+/*min-width: 481px and max-width:767px*/
+
+@media screen and (min-width:481px) and (max-width:767px)
+{
+
+	.right-nav .ul-right-nav{
+		display: none;
+
+	}
+
+	.toggle{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20px;
+  font-size: 24px;
+
+	cursor: pointer;
+	 	
+}
+
+.container-img-slide{
+width: 70%;
+margin: auto;
+height: 400px;	
+}
+
+.img_slide{
+	
+	width: 100%;
+	height: 100%;
+}
+
+.img_slide img{
+	width: 100%;
+   height:100%;    
+}
+#inner_reviews-div{
+	width: 50%;
+	background-color: #454545;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.Reviews_content img{
+	width: 160px;
+	height: 160px;
+}
+
+.Reviews_content i {
+
+	padding-left:75px;
+	font-size: 65px;
+
+
+}
+#Place_order_form{
+	width: 58%;
+}
+
+#Place_order_here h2{
+	font-size: 20px;
+	
+}
+button{
+	font-size: 2.5vw; 
+	}
+
+		#inner_contact_address{
+	gap: 20px;
+	justify-content: center;
+}
+
+#footer p{
+width: 75%;
+margin: auto;
+ font-size: 16px;
+}
+}
+
+
+/*max-width:480px*/
+
+@media only screen and (max-width:480px){
+
+	.right-nav .ul-right-nav{
+		display: none;
+	}
+
+	.toggle{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20px;
+  font-size: 24px;
+	cursor: pointer;
+	 	
+}
+	.container-img-slide{
+width: 70%;
+margin: auto;
+height: 300px;	
+}
+
+.img_slide{
+	
+	width: 100%;
+	height: 100%;
+}
+
+.img_slide img{
+	width: 100%;
+   height:100%;    
+}
+
+	.bottom_right_about_us-section{
+	width: 60%;
+	gap: 50px;
+	margin: auto;
+}
+
+
+.bottom_img img{
+	width: 300px;
+	height: 300px;
+}
+
+#top_right_about_us-section p{
+	max-width: 460px;
+	font-size: 1.0em;
+
+}
+
+#inner_reviews-div{
+	width: 60%;
+	margin: auto;
+	background-color: #454545;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.Reviews_content img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.Reviews_content i {
+	padding-left:50px;
+
+}
+
+#Place_order_form{
+	width: 80%;
+}
+
+button{
+	font-size: 2.5vw; 
+	}
+
+	#inner_contact_address{
+	gap: 20px;
+	justify-content: center;
+}
+
+#footer p{
+width: 90%;
+margin: auto;
+ font-size: 13px;
+}
+
+
+}
+
+@media only screen and (max-width:320px){
+
+	.Reviews_content img{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+}
+
+.Reviews_content i {
+	padding-left:50px;
+
+}
+}
+
+
